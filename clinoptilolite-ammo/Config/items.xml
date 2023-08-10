@@ -123,7 +123,7 @@
 				<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
 			</effect_group>
 		</item>
@@ -197,5 +197,5 @@
 	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
 	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>	
-	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>	
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
 </configs>

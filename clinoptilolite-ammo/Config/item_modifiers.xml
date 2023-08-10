@@ -1,0 +1,5 @@
+<configs>
+
+	<setattribute xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover'] name="installable_tags">melee,tool</setattribute>
+
+</configs>
