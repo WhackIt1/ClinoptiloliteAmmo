@@ -1,0 +1,13 @@
+Key,english
+ammoShotgunShellClinoptilolite,"Shotgun Shell, Clinoptilolite (Ammo)"
+ammoBundleShotgunShellClinoptilolite,"Box of Clinoptilolite Shotgun Shells (100)"
+ammo44MagnumBulletClinoptilolite,".44 Magnum Round, Clinoptilolite (Ammo)"
+ammoBundle44MagnumBulletClinoptilolite,"Box of Clinoptilolite .44 Ammo (100)"
+ammo9mmBulletClinoptilolite,"9mm Round, Clinoptilolite (Ammo)"
+ammoBundle9mmBulletClinoptilolite,"Box of Clinoptilolite 9mm Ammo (100)"
+ammo762mmBulletClinoptilolite,"7.62mm Round, Clinoptilolite (Ammo)"
+ammoBundle762mmBulletClinoptilolite,Box of Clinoptilolite 7.62mm Ammo (100)
+ammoClinoptiloliteGroupDesc,Clinoptilolite ammunition removes irradiated zombies healing
+resourceClinoptilolitePowder,"Clinoptilolite Powder"
+resourceClinoptilolitePowderBundle,"Bundle of Clinoptilolite Powder (1000)"
+resourceClinoptilolitePowderDesc,Clinoptilolite Powder used in the manufacturing of clinoptilolite rounds.

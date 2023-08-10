@@ -1,0 +1,201 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="resourceClinoptilolitePowder">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="resourcePotassiumNitratePowder"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mdirt"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+		
+		<item name="resourceClinoptilolitePowderBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourcePotassiumNitratePowder"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="UnlockedBy" value="craftingMedical"/><!-- perkDemolitionsExpert -->
+			<property class="Action0">
+				<property name="Create_item" value="resourceClinoptilolitePowder"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+
+		<item name="ammoShotgunShellClinoptilolite">
+			<property name="Extends" value="ammoShotgunShell"/>
+			<property name="Tags" value="ammo,shotgun,ammoShells"/>
+			<property name="CustomIcon" value="ammoShotgunShell"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="DisplayType" value="ammoBulletClinoptilolite"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="DescriptionKey" value="ammoClinoptiloliteGroupDesc"/>
+			<property name="UnlockedBy" value="perkShotgunMessiahBreachingSlugs"/> <!-- BOOK_PERK -->
+			
+			<effect_group name="ammoShotgunShellClinoptilolite" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="10.1" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
+				<passive_effect name="MaxRange" operation="base_set" value="10" tags="perkBoomstick"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="4" tags="perkBoomstick"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
+				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammo44MagnumBulletClinoptilolite">
+			<property name="Extends" value="ammo44MagnumBulletBall"/>
+			<property name="Tags" value="ammo44Mag"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="DisplayType" value="ammoBulletClinoptilolite"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="DescriptionKey" value="ammoClinoptiloliteGroupDesc"/>
+			<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/> <!-- BOOK_PERK -->
+			
+			<effect_group name="ammo44MagnumBulletClinoptilolite" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</item>
+
+		<item name="ammo9mmBulletClinoptilolite">
+			<property name="Extends" value="ammo9mmBulletBall"/>
+			<property name="Tags" value="ammo9mm"/>
+			<property name="CustomIcon" value="ammo9mmBulletAP"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="DisplayType" value="ammoBulletClinoptilolite"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="DescriptionKey" value="ammoClinoptiloliteGroupDesc"/>
+			<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/> <!-- BOOK_PERK -->
+			
+			<effect_group name="ammo9mmBulletClinoptilolite" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammo762mmBulletClinoptilolite">
+			<property name="Extends" value="ammo762mmBulletBall"/>
+			<property name="Tags" value="ammo762mm"/>
+			<property name="CustomIcon" value="ammo762mmBulletAP"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="DisplayType" value="ammoBulletClinoptilolite"/>
+			<property name="EconomicValue" value="16"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="DescriptionKey" value="ammoClinoptiloliteGroupDesc"/>
+			<property name="UnlockedBy" value="perkSniperHPAmmo"/> <!-- BOOK_PERK -->
+			
+			<effect_group name="ammo762mmBulletClinoptilolite" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoBundleShotgunShellClinoptilolite">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammoShotgunShell"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="UnlockedBy" value="perkShotgunMessiahComplete"/> <!-- BOOK_PERK -->
+			<property name="TraderStageTemplate" value="ammoTier1"/>
+			
+			<property class="Action0">
+				<property name="Create_item" value="ammoShotgunShellClinoptilolite"/>
+			</property>
+		</item>
+		
+		<item name="ammoBundle762mmBulletClinoptilolite">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="UnlockedBy" value="perkSniperComplete"/> <!-- BOOK_PERK -->
+			<property name="TraderStageTemplate" value="ammoTier1"/>
+			
+			<property class="Action0">
+				<property name="Create_item" value="ammo762mmBulletClinoptilolite"/>
+			</property>
+		</item>
+		
+		<item name="ammoBundle9mmBulletClinoptilolite">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="UnlockedBy" value="perkPistolPeteComplete"/> <!-- BOOK_PERK -->
+			<property name="TraderStageTemplate" value="ammoTier1"/>
+			
+			<property class="Action0">
+				<property name="Create_item" value="ammo9mmBulletClinoptilolite"/>
+			</property>
+		</item>
+		
+		<item name="ammoBundle44MagnumBulletClinoptilolite">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIconTint" value="9999ff"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="UnlockedBy" value="perkEnforcerComplete"/> <!-- BOOK_PERK -->
+			<property name="TraderStageTemplate" value="ammoTier1"/>
+			
+			<property class="Action0">
+				<property name="Create_item" value="ammo44MagnumBulletClinoptilolite"/>
+			</property>
+		</item>
+
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunShellClinoptilolite</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunShellClinoptilolite</append>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunShellClinoptilolite</append>
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunShellClinoptilolite</append>
+	<append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>	
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletClinoptilolite</append>	
+</configs>

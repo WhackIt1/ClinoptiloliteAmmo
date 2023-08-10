@@ -1,0 +1,74 @@
+<config>
+	<append xpath="/recipes">
+	
+		<recipe name="resourceClinoptilolitePowder" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+			<ingredient name="resourceCrushedSand" count="2"/>
+			<ingredient name="resourceRockSmall" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceClinoptilolitePowderBundle" count="1" craft_time="2700" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="800"/>
+			<ingredient name="resourceCrushedSand" count="1600"/>
+			<ingredient name="resourceRockSmall" count="800"/>
+		</recipe>
+		
+		<recipe name="ammoShotgunShellClinoptilolite" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="2"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceClinoptilolitePowder" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoBundleShotgunShellClinoptilolite" count="1" craft_time="540" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="160"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceClinoptilolitePowder" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="80"/>
+		</recipe>
+		
+		<recipe name="ammo9mmBulletClinoptilolite" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="2"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceClinoptilolitePowder" count="1"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoBundle9mmBulletClinoptilolite" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="160"/>
+			<ingredient name="resourceGunPowder" count="80"/>
+			<ingredient name="resourceClinoptilolitePowder" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+
+		<recipe name="ammo44MagnumBulletClinoptilolite" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="2"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceClinoptilolitePowder" count="1"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoBundle44MagnumBulletClinoptilolite" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="160"/>
+			<ingredient name="resourceGunPowder" count="160"/>
+			<ingredient name="resourceClinoptilolitePowder" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		
+		<recipe name="ammo762mmBulletClinoptilolite" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="2"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceClinoptilolitePowder" count="1"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoBundle762mmBulletClinoptilolite" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="160"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceClinoptilolitePowder" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
+		
+	</append>
+</config>
+

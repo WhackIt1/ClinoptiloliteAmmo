@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="Clinoptilolite_Ammo" />
+  <DisplayName value="Clinoptilolite Ammo" />
+  <Description value="Add clinoptilolite ammunition to the game, which disables radiated zombie healing. This mod also removes the Rad Remover Mod." />
+  <Author value="Whackit1" />
+  <Version value="21.0.0" compat="A21" />
+  <Website value="https://github.com/WhackIt1/ClinoptiloliteAmmo" />
+</xml>
