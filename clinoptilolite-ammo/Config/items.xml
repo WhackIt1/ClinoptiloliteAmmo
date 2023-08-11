@@ -36,21 +36,21 @@
 			<property name="UnlockedBy" value="perkShotgunMessiahBreachingSlugs"/> <!-- BOOK_PERK -->
 			
 			<effect_group name="ammoShotgunShellClinoptilolite" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="10.1" tags="perkBoomstick"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
-				<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
-				<passive_effect name="MaxRange" operation="base_set" value="10" tags="perkBoomstick"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="4" tags="perkBoomstick"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
-				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" tags="perkBoomstick"/>
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5" tags="perkBoomstick"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5" tags="perkBoomstick"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkBoomstick"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="102" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+				<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				
+
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkBoomstick"/><display_value name="dTargetArmor" value="-.5"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/><display_value name="dTargetPenetration" value="2"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
 			</effect_group>
 		</item>
