@@ -8,7 +8,7 @@
 	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']/effect_group/passive_effect[@level='1']/@tags">,ammoBundle9mmBulletClinoptilolite</append>
 	<append xpath="/progression/perks/book[@name='perkEnforcerComplete']/effect_group/passive_effect[@level='1']/@tags">,ammoBundle44MagnumBulletClinoptilolite</append>
 	<append xpath="/progression/perks/book[@name='perkSniperComplete']/effect_group/passive_effect[@level='1']/@tags">,ammoBundle762mmBulletClinoptilolite</append>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@icon='medicalFirstAidKit,drugAntibiotics,drugSteroids']/unlock_entry/@item">,resourceClinoptilolitePowderBundle</setattribute>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@icon='medicalFirstAidKit,drugAntibiotics,drugSteroids']/unlock_entry/@item">,resourceClinoptilolitePowderBundle</append>
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="resourceClinoptilolitePowderBundle"/>	
 	</append>
